@@ -9,10 +9,8 @@ pipeline {
 
     stage('Maven build') {
       steps {
-        sh '''echo %cd% 
-cd C:\\Repositories\\training-sda\\selenium-training
-echo %cd%
-mvn test'''
+        sh '''echo %cd% cd C:\\Users\\user\\Desktop\\selenium-training-master
+echo %cd% mvn test'''
       }
     }
 
