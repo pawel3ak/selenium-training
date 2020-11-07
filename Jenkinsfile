@@ -9,8 +9,9 @@ pipeline {
 
     stage('Maven build') {
       steps {
-        sh '''echo %cd% 
-cd C:\\Repositories\\training-sda\\selenium-training
+        sh '''echo %cd%
+cd C:\\Users\\jakub\\Desktop\\CI\\selenium-training-master
+set path=path;C:\\Users\\jakub\\Desktop\\CI\\apache-maven-3.6.3\\bin
 echo %cd%
 mvn test'''
       }
