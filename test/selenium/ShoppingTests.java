@@ -8,7 +8,7 @@ import pages.dresses.DressesPage;
 
 public class ShoppingTests extends SdaBaseTest {
     //isPossibleToCompareTwoProducts()
-    //isRemovingOfItemPossibleFromShoppingCard()
+
     //isPossibleToOrderChoosenItems()
     private DressesPage dressesPage;
 
@@ -17,6 +17,16 @@ public class ShoppingTests extends SdaBaseTest {
         super.setup();
         dressesPage = new DressesPage(driver);
         dressesPage.visit();
+    }
+
+    @Test
+    public void isRemovingOfItemPossibleFromShoppingCard(){
+        //#center_column #homefeatured > li a[title="Faded Short Sleeve T-shirts"] hover
+        //#homefeatured .right-block .button-container a[data-id-product="1"] click
+        //.layer_cart_cart .button-medium click
+        //.icon-trash click
+        //.alert-warning (visible + text validation)
+
     }
 
     @Test

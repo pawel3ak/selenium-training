@@ -10,9 +10,12 @@ public class LoginTest extends SdaBaseTest {
     public void loginAutomationPageTest() {
         driver.get("http://automationpractice.com/");
         driver.findElement(By.cssSelector(".login")).click();
+        //wait
         final WebElement inputEmail = driver.findElement(By.cssSelector("#email_create"));
+        System.out.println(driver.getCurrentUrl());
         inputEmail.sendKeys("xxx@gmail.com");
         final WebElement createAccountButton = driver.findElement(By.cssSelector("#SubmitCreate"));
+
     }
 
     @Test
